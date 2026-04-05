@@ -1,17 +1,21 @@
-﻿Console.WriteLine("====== Introduce tu nota del examen: ======");
-int nota = Convert.ToInt32(Console.ReadLine());
-if (nota > 6)
-{
-    Console.WriteLine("Has aprobado el examen");
-}
-else if (nota < 6 && nota > 4)
-{
-    Console.WriteLine("Debes repetir el examen");
-}
-else
-{
-    Console.WriteLine("Has reprobado el examen");
-}
-;
+﻿int numero;
+do {
+    Console.WriteLine("====== Introduce 0 para salir ======");
+    numero = Convert.ToInt32(Console.ReadLine());
+    if (numero != 0)
+    {
+        Console.WriteLine("Numero invalido: " + numero + "\n" + "Intente de nuevo...");
+    }
+}while(numero != 0);
+Console.WriteLine($"Numero valido: {numero}");
+Console.WriteLine("====== Haz salido con exito ======");
+
+
+
+
+
+
+
+
 
 Console.ReadKey();
